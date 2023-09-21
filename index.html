@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap"
+      rel="stylesheet">
+
+    <title>Trumpet Tracker - Login/Register</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Trumpet Tracker</h1>
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required><br><br>
+
+        <div class="b">
+        <button type="button" onclick="validate()">Login</button>
+        </div>
+      </form>
+      <div class="register-link">
+        <p>Don't have an account? <a href="#">Register here</a></p>
+      </div>
+    </div>
+
+    <script>
+      function validate() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Check if the username and password are correct
+        if (username === "admin" && password === "password") {
+          // Redirect to the desired HTML page
+          window.location.href = "/dist/homepage.html";
+        } else {
+          alert("Invalid username or password. Please try again.");
+        }
+      }
+    </script>
+  </body>
+</html>

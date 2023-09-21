@@ -1,0 +1,145 @@
+/* Default styles (for screens wider than 980px) */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DBDBDB;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #808080;
+  font-family: 'Oleo Script', cursive;
+  text-decoration: underline;
+}
+
+h2 {
+  color: #808080;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #808080;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #808080;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 10px;
+  color: #777777;
+}
+
+.register-link a {
+  color: #444444;
+  text-decoration: none;
+}
+
+img {
+  height: 100px;
+}
+
+.b {
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  color: white;
+  width: 350px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #808080;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Media queries for different screen sizes */
+
+/* For screens between 980px and 567px */
+@media (max-width: 980px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* For screens between 568px and 479px */
+@media (max-width: 568px) {
+  .container {
+    max-width: 90%;
+    margin-top: 50px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* For screens between 480px and 359px */
+@media (max-width: 480px) {
+  .container {
+    max-width: 95%;
+    margin-top: 30px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
+
+/* For screens below 360px */
+@media (max-width: 360px) {
+  .container {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  button {
+    width: 100%;
+  }
+}

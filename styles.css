@@ -1,0 +1,144 @@
+/* Default styles (for screens wider than 980px) */
+@import 'https://fonts.googleapis.com/css?family=Catamaran';
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Change the color of the links when you hover over them */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+
+
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-items: center;
+}
+
+/* Change the color of the links when you hover over them */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+
+body {
+font-family: Arial, sans-serif;
+}
+
+header {
+text-align: center;
+padding: 20px;
+background-color: #f1f1f1;
+}
+
+h1 {
+font-family: 'Oleo Script', cursive;
+font-size: 36px;
+text-decoration: underline;
+}
+
+main {
+margin: 20px auto;
+max-width: 800px;
+padding: 0 20px;
+}
+
+section {
+margin-bottom: 40px;
+}
+
+h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+footer {
+background-color: #3333;
+padding: 20px;
+}
+
+/* Media queries for different screen sizes */
+
+/* For screens between 980px and 568px */
+@media (max-width: 980px) {
+  .navbar a {
+    padding: 12px 14px;
+  }
+}
+
+/* For screens between 568px and 480px */
+@media (max-width: 568px) {
+  .navbar a {
+    padding: 10px 12px;
+  }
+}
+
+/* For screens between 480px and 360px */
+@media (max-width: 480px) {
+  .navbar a {
+    padding: 8px 10px;
+  }
+}
+
+/* For screens below 360px */
+@media (max-width: 360px) {
+  .navbar {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  main {
+    padding: 0 10px;
+  }
+  footer {
+    padding: 10px;
+  }
+}
